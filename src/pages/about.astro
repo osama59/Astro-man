@@ -3,7 +3,7 @@ import Welcome from "../components/Welcome.astro";
 import Header from "../components/Header.astro";
 
 import Footer from "../components/footer.astro";
-import Layout from "../layouts/Layout.astro";
+import Layout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
 
 const pageTitle = "About Me";
@@ -27,10 +27,8 @@ const textCase = "uppercase";
 
 <Layout>
     <body>
-        <Header />
         <h1>this is the about section 🥰</h1>
         <h1 style="color: rgb(43, 226, 98);">WOWOOWOWOW</h1>
-        <h1>{pageTitle}</h1>
         <h2>... and my new Astro site!</h2>
 
         <p>
@@ -85,9 +83,5 @@ const textCase = "uppercase";
                 text-transform: var(--textCase);
             }
         </style>
-        <Footer />
-        <script>
-            import "../scripts/menu.js";
-        </script>
     </body>
 </Layout>
